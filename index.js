@@ -5,7 +5,7 @@ const xpub = `xpub661MyMwAqRbcFtXgS5sYJABqqG9YLmC4Q1Rdap9gSE8NqtwybGhePY2gZ29ESF
 const hdNode = bitcoin.HDNode.fromBase58(xpub);
 console.log(`Generating addresses for pubkey: `+ xpub);
 
-for(let i = 1; i < 10; i++){
+for(let i = 1; i < 10; i++) { 
     const path = '0/'+i;
     const key1 = hdNode.derivePath(path);
     console.log(path + ": "+key1.keyPair.getAddress());
