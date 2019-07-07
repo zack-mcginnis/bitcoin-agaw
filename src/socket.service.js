@@ -1,36 +1,5 @@
-const bitcoin = require('bitcoinjs-lib');
 const WebSocket = require('ws');
 const url = `wss://ws.blockchain.info/inv`;
-
-class Bitcoin {
-
-    constructor(newXpub) {
-        this.setXpub(newXpub);
-        this.setHdNode(bitcoin.HDNode.fromBase58(newXpub))
-    }
-
-    setXpub(newXpub) {
-        this.xpub = newXpub
-    }
-
-    setHdNode(newHdNode) {
-        this.hdNode = newHdNode
-    }
-
-    updatePubKey(newXpub) {
-        this.setXpub(newXpub);
-        this.setHdNode(bitcoin.HDNode.fromBase58(newXpub))
-    }
-
-    generate(n) {
-        const path = '0/' + n;
-        const key = this.hdNode.derivePath(path);
-        const address = key.keyPair.getAddress()
-        console.log(path + ": " + address);
-        listenForBtcPayment(address)
-        return address;
-    }
-}
 
 const listenForBtcPayment = (address) => {
     const websocket = new WebSocket(url);
@@ -125,4 +94,4 @@ const reconnectOne = async(address, count) => {
     console.log(`reconnected previous connection...`);
 };
 
-module.exports = Bitcoin;
+module.exports = listenForBtcPayment;
