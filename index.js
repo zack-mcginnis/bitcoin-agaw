@@ -1,3 +1,3 @@
-const Bitcoin = require(`./bitcoin`);
+const Bitcoin = require(`./src/bitcoin`);
 
 module.exports = Bitcoin;

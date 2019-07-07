@@ -1,55 +1,54 @@
 {
-  "name": "bitcoin-agaw",
-  "version": "0.0.1",
-  "description": "Bitcoin address generator and watcher utility",
-  "author": "zack mcginnis <zackmcginnis@hotmail.com>",
-  "main": "index.js",
-  "scripts": {
-    "lint": "gulp lint",
-    "test": "gulp test",
-    "coverage": "gulp coverage",
-    "build": "gulp"
-  },
-  "keywords": [
-    "bitcoin",
-    "transaction",
-    "address",
-    "p2p",
-    "ecies",
-    "cryptocurrency",
-    "blockchain",
-    "payment",
-    "bip21",
-    "bip32",
-    "bip37",
-    "bip69",
-    "bip70",
-    "multisig"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zackmcginnis/bitcoin-agaw.git"
-  },
-  "browser": {
-    "request": "browser-request"
-  },
-  "dependencies": {
-    "bip32-utils": "^0.10.1",
-    "bip39": "^2.3.1",
-    "bitcoinjs-lib": "^3.3.0",
-    "bn.js": "=4.11.8",
-    "bs58": "=4.0.1",
-    "buffer-compare": "=1.1.1",
-    "elliptic": "=6.4.0",
-    "inherits": "=2.0.1",
-    "lodash": "=4.17.11",
-    "ws": "^6.2.1"
-  },
-  "devDependencies": {
-    "brfs": "^2.0.1",
-    "chai": "^4.2.0",
-    "gulp": "^4.0.0",
-    "sinon": "^7.1.1"
-  },
-  "license": "MIT"
+    "name": "bitcoin-agaw",
+    "version": "0.0.1",
+    "description": "Bitcoin address generator and watcher utility",
+    "author": "zack mcginnis <zackmcginnis@hotmail.com>",
+    "main": "index.js",
+    "scripts": {
+        "test": "node"
+    },
+    "keywords": [
+        "bitcoin",
+        "transaction",
+        "address",
+        "p2p",
+        "ecies",
+        "cryptocurrency",
+        "blockchain",
+        "payment",
+        "bip21",
+        "bip32",
+        "bip37",
+        "bip69",
+        "bip70",
+        "multisig"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zackmcginnis/bitcoin-agaw.git"
+    },
+    "browser": {
+        "request": "browser-request"
+    },
+    "dependencies": {
+        "bip32-utils": "^0.10.1",
+        "bip39": "^2.3.1",
+        "bitcoinjs-lib": "^3.3.0",
+        "bn.js": "=4.11.8",
+        "bs58": "=4.0.1",
+        "buffer-compare": "=1.1.1",
+        "elliptic": "=6.4.0",
+        "eslint": "^5.16.0",
+        "inherits": "=2.0.1",
+        "lodash": "=4.17.11",
+        "ws": "^6.2.1"
+    },
+    "devDependencies": {
+        "brfs": "^2.0.1",
+        "chai": "^4.2.0",
+        "gulp": "^4.0.0",
+        "mocha": "^6.1.4",
+        "sinon": "^7.1.1"
+    },
+    "license": "MIT"
 }
