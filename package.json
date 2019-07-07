@@ -5,7 +5,7 @@
     "author": "zack mcginnis <zackmcginnis@hotmail.com>",
     "main": "index.js",
     "scripts": {
-        "test": "node"
+        "test": "./node_modules/.bin/mocha --reporter spec"
     },
     "keywords": [
         "bitcoin",
